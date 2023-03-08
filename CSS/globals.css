@@ -1,0 +1,236 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=PT+Sans:wght@700&family=Roboto:wght@400;700&display=swap");
+
+/*Google Fonts
+font-family: "Open Sans", sans-serif;
+font-family: "PT Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: 'Dancing Script', cursive;
+*/
+
+:root {
+  --white: #f5f5f5;
+  --black: #000;
+  --blackLight: #4b4b4b;
+  --barraNav: #ededed;
+  --footer: #c3c3c3;
+  --colorFormulario: #ffa400;
+  --gris: #757575;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.4rem;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  line-height: 1.8;
+}
+
+.nav-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--barraNav);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.parrafo-nav {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+.navegacion-contenedor {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .nav-contenedor {
+    padding: 1rem;
+  }
+  .parrafo-nav {
+    font-size: 1.8rem;
+  }
+}
+
+.navegacion a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding-right: 0.5rem;
+}
+
+.navegacion a:hover {
+  transition: all 0.3s;
+  font-size: 1.9rem;
+  color: var(--blackLight);
+}
+
+.hero {
+  background-image: url(../HTML/imagen.jpg);
+  background-repeat: no-repeat;
+  background-position: 3%;
+  background-size: cover;
+  opacity: 0.9;
+  height: 65vh;
+  font-weight: bold;
+  padding: 2rem;
+  line-height: 2;
+}
+
+.subtitulo {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.contenedor_principal {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+}
+
+@media (min-width: 1200px) {
+  .contenedor_principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  .section {
+    padding-top: 1.8rem;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+  }
+  .separador {
+    padding-bottom: 1rem;
+  }
+  .section-espaciada {
+    padding-top: 4rem;
+  }
+
+  .submit {
+    margin-left: 25rem;
+    margin-right: 1rem;
+    max-width: 40%;
+  }
+}
+
+.contenedor_section p {
+  text-align: justify;
+}
+
+.section {
+  padding-bottom: 1.2rem;
+}
+
+.formulario {
+  background-color: var(--gris);
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--colorFormulario);
+}
+
+.aside {
+  margin-bottom: 2rem;
+}
+
+.aside h2 {
+  text-align: center;
+}
+
+.contenedor-campos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.8rem;
+}
+
+.campos {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-right: 0.5rem;
+}
+
+.campos label {
+  display: block;
+}
+
+.campos input {
+  width: 95%;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+.submit {
+  display: flex;
+}
+
+.boton {
+  width: 97%;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #0097a7;
+  color: #fff;
+  font-weight: bold;
+}
+
+.boton:hover {
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  height: 8vh;
+  text-align: center;
+  background-color: var(--footer);
+}
